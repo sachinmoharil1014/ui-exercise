@@ -1,0 +1,11 @@
+<details class="accordion" (click)="toggleOpen()">
+  <summary>
+    <div>
+      <span class="question-index">Q{{ questionIndex }}</span>
+      <span class="question">{{ accordionData.question }}</span>
+    </div>
+    <div *ngIf="!accordionData.isOpen" class="action-icon">+</div>
+    <div *ngIf="accordionData.isOpen" class="action-icon">-</div>
+  </summary>
+  <p class="question-answer">{{ accordionData.answer }}</p>
+</details>

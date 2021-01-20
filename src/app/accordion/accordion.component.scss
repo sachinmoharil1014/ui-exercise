@@ -1,0 +1,34 @@
+.accordion {
+  padding: 1rem 0;
+  summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &:focus{
+      outline: none;
+    }
+    .question-index {
+      padding-right: 1rem;
+    }
+    .action-icon {
+      font-size: 3rem;
+      background-color: #ffc107;
+      font-weight: 700;
+      padding: 5px 20px;
+      display: flex;
+      align-items: center;
+      height: 36px;
+      cursor: pointer;
+    }
+  }
+
+  .active {
+    font-size: 1.5rem;
+    background: #ddd;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,6 @@
+<div *ngIf="accordionDataList">
+  <div *ngFor="let data of accordionDataList; index as i; trackBy">
+    <app-accordion [accordionData]="data" [questionIndex]="i+1"> </app-accordion>
+    <div class="divider"></div>
+  </div>
+</div>
